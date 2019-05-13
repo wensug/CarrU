@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import { HashRouter as Router} from 'react-router-dom';
-import './App.css';
 import Header from './components/header/Header';
 import Homepage from './components/homepage/Homepage';
 
-
+import './App.css';
 
 
 class App extends Component {
