@@ -1,0 +1,34 @@
+
+.UserForm {
+    margin-left: 30px; 
+}
+
+
+
+.UserForm, .form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+}
+
+.headerUserForm {
+    padding: 10px;
+    
+}
+
+.input {
+    padding: 6px;
+    margin: 10px;
+}
+
+.buttonForm {
+    padding: 8px 10px;
+    width: 70px;
+    
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+
+
+}
