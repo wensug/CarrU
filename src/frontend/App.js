@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { HashRouter as Router} from 'react-router-dom';
 import Header from './components/header/Header';
 import Homepage from './components/homepage/Homepage';
-import UserForm from './components/UserForm/UserForm';
 
 import './App.css';
 
@@ -14,6 +13,7 @@ class App extends Component {
         <div className='App'>
           <Header />
           <Homepage />
+          
         </div>
       </Router>
     );

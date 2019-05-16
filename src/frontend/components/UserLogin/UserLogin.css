@@ -1,0 +1,50 @@
+.boxUserLogin {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    text-align: center;
+}
+
+.headerUserLogin {
+    padding: 10px;
+    font-size: 1rem;
+    color: green;
+    font-weight: bold;
+}
+
+.inputFieldsUserLogin {
+    padding: 10px;
+    margin: 10px 50px;
+
+}
+
+.buttonUserLogin{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: green;
+    color: white;
+    text-align: center;    
+}
+
+.loginHelpLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+.loginHelpLinks > a {
+    padding: 10px;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .boxUserLogin {
+        margin: 30px 100px;
+    }
+    .buttonUserLogin{        
+        width: 20%;
+        margin: 20px auto;         
+    }
+  }
