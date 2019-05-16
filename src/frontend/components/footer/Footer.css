@@ -1,0 +1,6 @@
+.footer-main {
+    display: flex;
+}
+.footer-navbar {
+    flex-direction: column;
+}
