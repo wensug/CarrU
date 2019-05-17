@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -15,5 +15,5 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #4a4a4a;
-    background-color: #e9e9f1;
+    
   }

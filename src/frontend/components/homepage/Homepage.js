@@ -13,20 +13,16 @@ export default class Homepage extends React.Component {
                         <h1>CarrU</h1>
                         <p>Are you a big group? Need help to organise a trip? CarrU is your solution!</p>
                     </div>
-                    <div className='homepage-img'>
-                        <img
-                            src={img_1}
-                            alt='peoplecar'
-                        />
-                    </div>
-                    <div className='homepage-arrow'>
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                    <div className='homepage-img'>
-                        <img
-                            src={img_2}
-                            alt='peoplecars'
-                        />
+                    <div className='img-section'>
+                        <div className='homepage-img box'>
+                            <img src={img_1} alt='peoplecar' />
+                        </div>
+                        <div className='homepage-arrow box'> 
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div className='homepage-img box'>
+                            <img src={img_2} alt='peoplecars' />
+                        </div>
                     </div>
                 </div>
                 <div className='homepage-section'>

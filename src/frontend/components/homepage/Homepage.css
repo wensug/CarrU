@@ -1,75 +1,3 @@
-/* .Homepage {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .Homepage-section {
-    margin: auto;
-    text-align: center;
-    background-color: 0 1px 10px 0 rgba(0, 0, 0, 0.2); 
-} */
-
-/* .Homepage-img {
-    margin: 40px;
-    float: right;
-    border: 8px solid white;
-    -webkit-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-} */
-
-
-/* .Homepage-arrow {
-    width: 50px;
-    height: 50px;
-    float: right; 
-    margin-top: 150px;
-    border-top: 20px solid rgb(62, 165, 84);
-    border-right: 20px solid  rgb(62, 165, 84);
-    transform: rotate(45deg);
-    border-radius: 15%;
-} */
-
-/* ol.Homepage-ticklist {
-    list-style-position: inside;
-    overflow: hidden;
-    border: 8px solid white;
-    background-color: rgb(245, 245, 245);
-    -webkit-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-
-} */
-/* ol.Homepage-ticklist li{
-    float: left;
-    width: 250px;
-    margin: 20px;
-    text-align: center;
-} */
-
-/* ul.Homepage-ticklist  {
-   
-    overflow: hidden; 
-    border: 8px solid white;
-    background-color: rgb(245, 245, 245);
-    -webkit-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
- }
-  
-ul.Homepage-ticklist li {
-    display: inline-block;
-    margin: 30px;
-    text-align: center;
-    font-weight: bold; 
-}  */
-/* @media only screen and (max-width: 600px) {
-    .Homepage{
-        flex-direction: column;
-    }
-} */
-
-
 .homepage h1, .homepage p {
    padding: 1.5rem;
    text-align: center;
@@ -82,7 +10,7 @@ ul.Homepage-ticklist li {
 
 .fas {
     text-align: center;
-    color: green;
+    color: #67C21B;
     width: 100%;
     font-size: 4rem;
 }
@@ -92,20 +20,22 @@ ul.Homepage-ticklist li {
     flex-direction: column;
    align-items: center;
     text-align: center;
-    background-color: rgb(245, 245, 245);
+    background-color: #fff;
     -webkit-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    position: relative;
+    
 }
 
 .homepage-ticklist li {
     padding: 1rem;
     margin: 0.5rem;
     font-weight: bold; 
-    background-color:  rgb(206, 206, 206);
-    width: 213px;
-    height: 220px;
+    background-color:  #F2F2F2;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    box-shadow: 0 0px 0px #eee, 0 1px 4px #d5d5d5;
 }
 
 
@@ -113,7 +43,7 @@ li i.far.fa-check-circle {
     position: absolute;
     top: 19px;
     left: 37px;
-    font-size: 30px;
+    font-size: 40px;
     color: green;
 }
 
@@ -122,10 +52,38 @@ li i.far.fa-check-circle:nth-child(2) {
     top: 40px;
     left: 37px;
     font-size: 30px;
-    color: green;
+    color: #67C21B;
 }
 
 #one, #two, #three {
     display: none;
+    top: 91px;
+    left: -46px;
 }
 
+@media (min-width: 780px) {
+
+    .box {
+        margin: 1rem;
+    }
+    .homepage-img {
+        max-width: 30%;
+    }
+    .img-section {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    #one, #two, #three {
+        display: block;
+    }
+
+    .homepage-ticklist {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+  }

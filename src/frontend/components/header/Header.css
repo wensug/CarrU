@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(139, 228, 198);
-    color: #4a4a4a;
+    background-color: #67C21B;
+    color: #000;
   }
 
   .header li {
@@ -22,9 +22,35 @@
 }
 
   .header li a {
-      color:rgb(110, 114, 113);
+      color: #fff;
   }
 
   .header a:hover {
-      background-color: rgb(110, 114, 113, 0.3);
+      color: rgb(255, 247, 35);
   }
+
+
+@media (min-width: 780px) {
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    background-color: #67C21B;
+    color: #000;
+    height: 4rem;
+    box-shadow: 0 0px 0px #eee, 0 1px 4px #d5d5d5;
+  }
+
+  .header li:first-child {
+    margin-left: 6rem;
+    margin-right: auto;
+}
+
+  .header li {
+    margin-left: 1.5rem;
+  }
+
+  .header li:last-child {
+    margin-right: 2rem;
+  }
+}
