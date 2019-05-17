@@ -21,9 +21,7 @@
    align-items: center;
     text-align: center;
     background-color: #fff;
-    -webkit-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
+    
     
 }
 
@@ -85,5 +83,9 @@ li i.far.fa-check-circle:nth-child(2) {
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
+    }
+
+    .fas {
+        transform: rotate(-90deg);
     }
   }

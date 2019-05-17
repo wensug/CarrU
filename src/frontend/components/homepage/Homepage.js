@@ -28,7 +28,7 @@ export default class Homepage extends React.Component {
                 <div className='homepage-section'>
                     <div className='homepage-text'>
                         <h1>Manage your event more easily</h1>
-                        <p>If you need to arrange transport for a group, match drivers with passagers
+                        <p>If you need to arrange transport for a group, match drivers with passengers
                             in different locations, and sort it quickly.
                         </p>
                     </div>
