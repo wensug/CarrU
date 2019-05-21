@@ -1,0 +1,63 @@
+* {
+    background-color: white;  
+}
+.NewEventForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    color: black;
+    
+}
+
+.headerNewEventForm {
+    padding: 10px;
+    margin: 20px auto 10px 15px;
+}
+
+.NewEventForm {
+    margin: 20px;
+}
+
+/* .NewEventBox {
+    display: flex;
+    flex-direction: row;       
+} */
+
+.paraInputWrap {
+    margin-right: 40px;
+    margin-top: 10px;    
+}
+
+.NewEventForm > h3 {
+    padding: 5px 10px 2px 2px;
+    margin: 2px 20px 2px 2px;
+}
+
+.NewEventInput, .membersBox {
+    padding: 12px;
+    border: solid 2px grey;
+    border-radius: 10px;
+}
+
+.NewEventMessage {
+    
+        padding: 5px 10px 2px 2px;
+        margin: 2px 20px 2px 2px;
+    
+}
+
+.NewEventButton {
+    padding: 5px;
+    margin: 20px auto 15px auto;
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .NewEventBox {
+        display: flex;
+        flex-direction: row;  
+        flex-wrap: wrap;     
+    }
+  }
