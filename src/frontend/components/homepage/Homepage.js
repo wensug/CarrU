@@ -1,6 +1,7 @@
 import React from 'react';
 import img_1 from '../../images/carru1.png';
 import img_2 from '../../images/carru2.jpg';
+
 import './Homepage.css'
 
 
@@ -17,7 +18,7 @@ export default class Homepage extends React.Component {
                         <div className='homepage-img box'>
                             <img src={img_1} alt='peoplecar' />
                         </div>
-                        <div className='homepage-arrow box'> 
+                        <div className='homepage-arrow box'>
                             <i class="fas fa-arrow-down"></i>
                         </div>
                         <div className='homepage-img box'>

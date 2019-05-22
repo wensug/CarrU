@@ -1,0 +1,102 @@
+.dashboard-header h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.dashboard-groups h3 {
+    margin: 2rem 1rem 1rem;
+}
+
+.groups-table {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: center;
+    padding: 4px;
+    margin-bottom: 3rem;
+}
+
+.group-name li, .group-description li {
+    padding: 4px;
+}
+
+.group {
+    background-color: rgb(238, 234, 234);
+    width: 300px;
+    margin: 10px auto;
+    height: 100px;
+}
+
+footer {
+    position:relative;
+    left:0px;
+    bottom:0px;
+    width:100%;
+}
+
+
+@media (min-width: 780px) {
+
+    .group {
+        background-color: rgb(238, 234, 234);
+        width: 100%;
+        margin: 0;
+        height: auto;
+        border-radius: 3px;
+    }
+
+    .dashboard-grid {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .dashboard-groups {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-template-rows: 50px 200px 200px;
+        grid-gap: 25px;
+}
+
+    h3 {
+        grid-row: 1;
+        grid-column: 1;
+        align-self: end;
+    }
+
+    .groups-table {
+        grid-column: 1;
+        grid-row: 2 /3;
+    }
+    
+    .one {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .two {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .three {
+        grid-row: 2;
+        grid-column: 4;
+    }
+
+    .four {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .five {
+        grid-row: 3;
+        grid-column: 3;
+    }
+
+    .six {
+        grid-row: 3;
+        grid-column: 4;
+    }
+}
+
+
