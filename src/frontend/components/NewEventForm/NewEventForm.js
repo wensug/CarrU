@@ -1,5 +1,6 @@
 import React from "react";
-import "./NewEventForm.css";
+// import "./NewEventForm.css";
+// fix CSS
 import getGroups from "../../data/groups-get";
 import getUsers from  "../../data/users-get";
 

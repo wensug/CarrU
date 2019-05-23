@@ -1,13 +1,14 @@
 import React, {Component} from "react";
 import "./UserLogin.css";
+import { NavLink } from 'react-router-dom';
 
 class UserLogin extends Component {
     constructor() {
         super();
-        // this.state = {
-        //     username: "",
-        //     password: "",
-        // }
+        this.state = {
+            username: "",
+            password: "",
+        }
 
     }
 
@@ -33,21 +34,13 @@ class UserLogin extends Component {
             
                     <button className="buttonUserLogin">Login</button>
                     <div className="loginHelpLinks">
-                        <a href="#">Forgot password?</a>
-                        <a href="#">Not a member yet?</a>
+                        <NavLink to='/'>Forgot password?</NavLink>
+                        <NavLink to='/user-form'>Not a member yet? Register</NavLink>
                     </div>
             </div>
         );
     }
 }
-
-
-
-
-
-
-
-
 
 
 export default UserLogin;

@@ -5,50 +5,52 @@ import "./UserProfile.css";
 class UserProfile extends React.Component {
     constructor() {
         super();
-        this.state= {
+        this.state = {
 
         }
     }
-// create a logic where we capture login credentials from login page and load automatically the associated info
+// create a logic where we capture login credentials from login page and load the associated info automatically 
 
 
     render() {
         return (
             <div className="UserProfile">
-                <header className="headerUserProfile">Profile</header>
+                <header className="headerUserProfile">
+                    <h1>User Profile</h1>
+                </header>
                 <hr></hr>
                 <form className="profileForm">
                     <div className="profileBox">
                         <div className="paraInputWrap">
-                            <p>FIRST NAME</p>
+                            <p>First Name</p>
                             <input type="text" className="ProfileName profileInput" />
                         </div>
                         <div className="paraInputWrap">
-                            <p>LAST NAME</p>
+                            <p>Last Name</p>
                             <input type="text" className="ProfileSurname profileInput" />
                         </div>
                     </div>
                     <div className="profileBox">
                         <div className="paraInputWrap">
-                            <p>ADDRESS</p>
+                            <p>Address</p>
                             <input type="text" className="ProfileAddress profileInput" />
                         </div>
                         <div className="paraInputWrap">
-                            <p>CITY</p>
+                            <p>City</p>
                             <input type="text" className="ProfileCity profileInput" />
                         </div>
                         <div className="paraInputWrap">
-                            <p>ZIP CODE</p>
+                            <p>Post Code</p>
                             <input type="text" className="ProfileZipCode profileInput" />
                         </div>
                     </div>
                     <div className="profileBox">
                         <div className="paraInputWrap">
-                            <p>EMAIL</p>
+                            <p>Email</p>
                             <input type="email" className="ProfileEmail profileInput" />
                         </div>
                         <div className="paraInputWrap">
-                            <p>COUNTRY</p>
+                            <p>Country</p>
                             <select className="ProfileCountry profileInput" selected="UK">
                                 <option value="uk">UK</option>
                                 <option value="italy">Italy</option>
@@ -57,7 +59,7 @@ class UserProfile extends React.Component {
                             </select>
                         </div>
                     </div>
-                    <button className="profileButton">Edit details</button>
+                    <button className="buttonUserLogin">Edit details</button>
                 </form>
             </div>
         );

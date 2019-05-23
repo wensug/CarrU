@@ -42,10 +42,10 @@ export default class JoinEvent extends React.Component {
         //conditional rendering
         return (
             <div>
-                <h3>You are invited to a NewEventName(var)</h3>
+                <h3>You are invited to a NewEventName(var)<br /><br /></h3>
                 <p>NewEventName(var) is at Location(var)<br /><br /></p>
                 <p>Are you a passenger or are you driving a car to the event?
-                    <br />Please select: 
+                    <br /><br />Please select: 
                 </p>
                 <form>
                     <input type="checkbox"

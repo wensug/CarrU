@@ -7,12 +7,11 @@ export default function Header() {
     return (
         <header>
             <ul className='header'>
-                <li><NavLink to='/#home'>CarrU</NavLink></li>
-                <li><NavLink to='/#home'>Home</NavLink></li>
-                <li><NavLink to='/#LogIn'>LogIn</NavLink></li>
-                <li><NavLink to='/#Contact'>Contact</NavLink></li>
+                <li><NavLink to='/'>CarrU</NavLink></li>
+                <li><NavLink to='/'>Home</NavLink></li>
+                <li><NavLink to='/user-login'>LogIn</NavLink></li>
+                <li><NavLink to='/'>Contact</NavLink></li>
             </ul>
-            
         </header>
     );
 }

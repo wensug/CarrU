@@ -1,7 +1,7 @@
 import React from 'react';
 import img_1 from '../../images/carru1.png';
 import img_2 from '../../images/carru2.jpg';
-
+import { NavLink } from 'react-router-dom';
 import './Homepage.css'
 
 
@@ -35,11 +35,17 @@ export default class Homepage extends React.Component {
                     </div>
                     <ul className='homepage-ticklist'>
                         <li><i class="far fa-check-circle" id='one'></i>
-                            <a>Organise the group</a></li>
+                            <a>Organise the group</a>
+                           <p><NavLink to='/new-group-form'>Create a new group</NavLink></p>
+                        </li>
                         <li><i class="far fa-check-circle" id='two'></i>
-                            <a>Create the events</a></li>
+                            <a><b>Create the events</b></a>
+                           <p><NavLink to='/new-event-form'>Create a new event</NavLink></p>
+                           <p><NavLink to='/join-event'>Join an existing event</NavLink></p>
+                        </li>
                         <li><i class="far fa-check-circle" id='three'></i>
-                            <a>Manage the event</a></li>
+                            <a>Manage the event</a>
+                        </li>
                     </ul>
                 </div>
             </div>

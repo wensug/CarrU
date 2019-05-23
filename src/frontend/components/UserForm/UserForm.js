@@ -1,19 +1,23 @@
 import React from "react";
-import UsersData from "../../../UsersData";
+// import UsersData from "../../../UsersData";
 import "./UserForm.css";
-
+import { NavLink } from 'react-router-dom';
 
 
 class UserForm extends React.Component {
     constructor(props) {
         super(props);
+
     }
 
 
     render() {
         return (
             <div className="UserForm">
-                <header className="headerUserForm">Create your user profile</header>
+                <header className="headerUserForm">
+                    <h1>New User</h1>
+                    <h2>Create your user profile</h2>
+                </header>
                 <form className="form">
                     <p>
                         <label>
@@ -81,8 +85,10 @@ class UserForm extends React.Component {
                              name="postcode"
                         />
                     </p>      
-                    <button className="buttonForm">Submit</button>
+                    {/* submit button will go here */}
+                    
                 </form>
+                <button className="buttonUserLogin"><NavLink to='/user-profile'>Submit</NavLink></button>
             </div>
         );
     }
