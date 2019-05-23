@@ -18,16 +18,16 @@ class UserForm extends React.Component {
                     <h1>New User</h1>
                     <h2>Create your user profile</h2>
                 </header>
-                <form className="form">
+                <form className="UserForm-form">
                     <p>
                         <label>
-                            Name:
+                            First Name:
                         </label>
                         <br></br>   
                         <input
-                            className="input"
+                            className="UserForm-input"
                             type="text"
-                            name="name"
+                            name="first name"
                         />
                     </p>
                     <p>
@@ -36,7 +36,7 @@ class UserForm extends React.Component {
                         </label>
                         <br></br>   
                         <input
-                           className="input"
+                           className="UserForm-input"
                            type="text"
                            name="surname"
                         />
@@ -47,18 +47,18 @@ class UserForm extends React.Component {
                         </label>
                         <br></br>   
                         <input
-                             className="input"
+                             className="UserForm-input"
                              type="email"
                              name="email"
                         />
                     </p>
                     <p>
                         <label>
-                            Telephone:
+                            Address:
                         </label>
                         <br></br>   
                         <input
-                            className="input"
+                            className="UserForm-input"
                             type="text"
                             name="telephone"
                                 />
@@ -69,7 +69,7 @@ class UserForm extends React.Component {
                         </label>
                         <br></br>   
                         <input
-                          className="input"
+                          className="UserForm-input"
                           type="text"
                           name="city"
                         />
@@ -80,11 +80,23 @@ class UserForm extends React.Component {
                         </label>
                         <br></br>   
                         <input
-                             className="input"
+                             className="UserForm-input"
                              type="text"
                              name="postcode"
                         />
-                    </p>      
+                    </p>  
+                    <p>
+                        <label>
+                            Country:
+                        </label>
+                        <br></br>   
+                        <select className="UserForm-input" selected="UK">
+                                <option value="uk">UK</option>
+                                <option value="italy">Italy</option>
+                                <option value="spain">Spain</option>
+                                <option value="venezuela">Venezuela</option>
+                            </select>
+                    </p> 
                     {/* submit button will go here */}
                     
                 </form>

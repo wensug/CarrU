@@ -1,12 +1,9 @@
-* {
-    background-color: white;  
-}
+
 .NewEventForm {
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: white;
-    color: black;
+
     
 }
 
@@ -18,11 +15,6 @@
 .NewEventForm {
     margin: 20px;
 }
-
-/* .NewEventBox {
-    display: flex;
-    flex-direction: row;       
-} */
 
 .paraInputWrap {
     margin-right: 40px;
@@ -50,8 +42,6 @@
 .NewEventButton {
     padding: 5px;
     margin: 20px auto 15px auto;
-    background-color: green;
-    color: white;
 }
 
 @media only screen and (min-width: 600px) {

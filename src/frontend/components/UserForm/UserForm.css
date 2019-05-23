@@ -5,7 +5,7 @@
 
 
 
-.UserForm, .form {
+.UserForm, .UserForm-form {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -17,7 +17,7 @@
     
 }
 
-.input {
+.UserForm-input {
     padding: 6px;
     margin: 10px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-// import "./NewEventForm.css";
+import "./NewEventForm.css";
 // fix CSS
 import getGroups from "../../data/groups-get";
 import getUsers from  "../../data/users-get";
@@ -132,7 +132,7 @@ class NewEventForm extends React.Component {
                                 </div>
                         </div>
                     </div>
-                    <button className="NewEventButton">Create</button>
+                    <button className="buttonUserLogin">Create</button>
                 </form>
             </div>
         );

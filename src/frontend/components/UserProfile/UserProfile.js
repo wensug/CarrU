@@ -1,5 +1,7 @@
 import React from "react";
 import "./UserProfile.css";
+import "../UserForm/UserForm";
+import getUsers from  "../../data/users-get";
 
 
 class UserProfile extends React.Component {
@@ -23,11 +25,17 @@ class UserProfile extends React.Component {
                     <div className="profileBox">
                         <div className="paraInputWrap">
                             <p>First Name</p>
-                            <input type="text" className="ProfileName profileInput" />
+                            <input type="text" 
+                            className="ProfileName profileInput" 
+                            value={getUsers()[0].firstName}
+                            />
                         </div>
                         <div className="paraInputWrap">
-                            <p>Last Name</p>
-                            <input type="text" className="ProfileSurname profileInput" />
+                            <p>Surname</p>
+                            <input type="text" 
+                            className="ProfileSurname profileInput" 
+                            value= {getUsers()[0].lastName}                            
+                            />
                         </div>
                     </div>
                     <div className="profileBox">
@@ -47,7 +55,10 @@ class UserProfile extends React.Component {
                     <div className="profileBox">
                         <div className="paraInputWrap">
                             <p>Email</p>
-                            <input type="email" className="ProfileEmail profileInput" />
+                            <input type="email" 
+                                className="ProfileEmail profileInput" 
+                                value= {getUsers()[0].email}
+                            />
                         </div>
                         <div className="paraInputWrap">
                             <p>Country</p>
