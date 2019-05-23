@@ -1,6 +1,6 @@
 import React from 'react';
-import img_1 from '../../images/carru1.png';
-import img_2 from '../../images/carru2.jpg';
+import img_1 from '../../images/carru3.png';
+import img_2 from '../../images/image1.svg';
 import { NavLink } from 'react-router-dom';
 import './Homepage.css'
 
@@ -36,15 +36,15 @@ export default class Homepage extends React.Component {
                     <ul className='homepage-ticklist'>
                         <li><i class="far fa-check-circle" id='one'></i>
                             <a>Organise the group</a>
-                           <p><NavLink to='/new-group-form'>Create a new group</NavLink></p>
+                            <p>Gather some friends and take a car trip!</p>
                         </li>
                         <li><i class="far fa-check-circle" id='two'></i>
                             <a><b>Create the events</b></a>
-                           <p><NavLink to='/new-event-form'>Create a new event</NavLink></p>
-                           <p><NavLink to='/join-event'>Join an existing event</NavLink></p>
+                            <p>Create the event, manage the calendar and add people to the event</p>
                         </li>
                         <li><i class="far fa-check-circle" id='three'></i>
                             <a>Manage the event</a>
+                            <p>Check how many people need a ride and reduce the number of cars for the event</p>
                         </li>
                     </ul>
                 </div>

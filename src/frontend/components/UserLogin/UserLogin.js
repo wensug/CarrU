@@ -31,11 +31,11 @@ class UserLogin extends Component {
                             placeholder="Password"
                             className="inputFieldsUserLogin"
                         />
-            
-                    <button className="buttonUserLogin">Login</button>
+
+                    <NavLink to='/user-dashboard'><button className='buttonUserLogin'>Login</button></NavLink>
                     <div className="loginHelpLinks">
                         <NavLink to='/'>Forgot password?</NavLink>
-                        <NavLink to='/user-form'>Not a member yet? Register</NavLink>
+                        <NavLink to='/user-form'>Not a member yet?</NavLink>
                     </div>
             </div>
         );

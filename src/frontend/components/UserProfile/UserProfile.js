@@ -1,7 +1,9 @@
 import React from "react";
 import "./UserProfile.css";
 import "../UserForm/UserForm";
-import getUsers from  "../../data/users-get";
+
+import getUsers from  "../data/users-get";
+
 
 
 class UserProfile extends React.Component {

@@ -10,10 +10,8 @@ import UserForm from './components/UserForm/UserForm';
 import NewEventForm from './components/NewEventForm/NewEventForm';
 import NewGroupForm from './components/NewGroupForm/NewGroupForm';
 import JoinEvent from './components/JoinEvent/JoinEvent';
+import Dashboard from './components/UserDashboard/UserDashboard';
 
-// import Dashboard from '../../src/frontend/components/userDashboard/UserDashboard';
-
-// import userDashboard from '../../src/frontend/components/userDashboard/UserDashboard';
 
 import './App.css';
 
@@ -32,6 +30,7 @@ class App extends Component {
             <Route exact path='/new-event-form' component={NewEventForm} />
             <Route exact path='/new-group-form' component={NewGroupForm} /> 
             <Route exact path='/join-event' component={JoinEvent} />
+            <Route exact path='/user-dashboard' component={Dashboard} />
             <Route path='/:badLink' component={NotFound} />
             {/* <Redirect to='not-found' />; may be used elsewhere */}
           </Switch>
