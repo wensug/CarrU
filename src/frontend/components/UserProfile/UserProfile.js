@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom';
 import "./UserProfile.css";
 import "../UserForm/UserForm";
 
@@ -18,6 +19,7 @@ class UserProfile extends React.Component {
 
     render() {
         return (
+            <>
             <div className="UserProfile">
                 <header className="headerUserProfile">
                     <h1>User Profile</h1>
@@ -72,9 +74,12 @@ class UserProfile extends React.Component {
                             </select>
                         </div>
                     </div>
-                    <button className="buttonUserLogin">Edit details</button>
+                    
                 </form>
             </div>
+            <NavLink to='/user-profile'><button>Edit Details</button></NavLink>
+            <NavLink to='/user-dashboard'><button>Dashboard</button></NavLink>
+            </>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 // import css when ready
 
 
@@ -42,8 +43,9 @@ export default class JoinEvent extends React.Component {
         //conditional rendering
         return (
             <div>
-                <h3>You are invited to a NewEventName(var)<br /><br /></h3>
-                <p>NewEventName(var) is at Location(var)<br /><br /></p>
+                <h3>You are invited to a NewEventName<br /><br /></h3>
+                <hr></hr>
+                <p>NewEventName(var) is at Location<br /><br /></p>
                 <p>Are you a passenger or are you driving a car to the event?
                     <br /><br />Please select: 
                 </p>
@@ -87,7 +89,8 @@ export default class JoinEvent extends React.Component {
 
                     <br />
                     <button>Reset</button>
-                    <button>Submit</button>
+                    <NavLink to='/user-dashboard'><button>Submit</button></NavLink>
+                    <NavLink to='/user-dashboard'><button>Cancel</button></NavLink>
                 </form>
 
             </div>

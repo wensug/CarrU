@@ -36,6 +36,7 @@ class UserLogin extends Component {
                     <div className="loginHelpLinks">
                         <NavLink to='/'>Forgot password?</NavLink>
                         <NavLink to='/user-form'>Not a member yet?</NavLink>
+                        <NavLink to='/'>Cancel</NavLink>
                     </div>
             </div>
         );

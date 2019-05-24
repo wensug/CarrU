@@ -2,6 +2,13 @@
     text-align: center;
     margin: 2rem;
 }
+.dashboard {
+    margin: 30px;
+    text-align: center;
+}
+h2 { 
+    text-align: center;
+}
 
 .dashboard-groups h3 {
     margin: 2rem 1rem 1rem;
@@ -66,16 +73,6 @@ footer {
         height: 200px;
     }
     
-    .buttonNew{
-        padding: 10px;
-        margin: 10px;
-        width: 100px;
-        margin: 20px;
-        background-color: #67C21B;
-        color: white;
-        text-align: center; 
-        border-radius: 10px;   
-    }
 /* 
     h3 {
         grid-row: 1;

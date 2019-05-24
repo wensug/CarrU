@@ -10,7 +10,7 @@ footer {
 }
 
 .footer-navbar li {
-    padding: 10px;
+    padding: 3px;
 }
 
 .footer-navbar a {
@@ -44,6 +44,7 @@ footer {
 
     footer {
         height: 4rem;
+        position: fixed;
     }
 
     .footer-main {

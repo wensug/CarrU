@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink} from 'react-router-dom';
 // import the css when is ready
 export default class NewGroupForm extends React.Component { 
     constructor(){
@@ -22,6 +23,7 @@ export default class NewGroupForm extends React.Component {
                  <div className='new-group'>
                     <form>
                         <h1>New Group</h1>
+                        <hr></hr>
                         <label>
                             Group Name: 
                             <input className='group-name'/>
@@ -36,7 +38,7 @@ export default class NewGroupForm extends React.Component {
                     <label> Add Member:
                         <input id='input-member' className='new-member' placeholder='Please add the member email'></input>
                     </label>
-                    <button className='add-memberbtn' onClick={() => this.addMemberList()}>Add</button>
+                    <button onClick={() => this.addMemberList()}>Add</button>
                   <list>
                         {
                             this.state.memberList.map(member => <p>{member}</p>)
@@ -44,7 +46,8 @@ export default class NewGroupForm extends React.Component {
                     </list>
                 </div>
                 <div>
-                    <button className='create-groupbtn'>Create</button>
+                    <NavLink to='/user-dashboard'><button>Create</button></NavLink>
+                    <NavLink to='/user-dashboard'><button>Cancel</button></NavLink>
                 </div>
             </div>
         )

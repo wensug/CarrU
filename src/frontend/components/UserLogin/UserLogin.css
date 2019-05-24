@@ -3,6 +3,10 @@
     flex-direction: column;
     margin: 30px;
     text-align: center;
+    /* border: 8px solid white; */
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
+
 }
 
 .headerUserLogin {
@@ -41,7 +45,7 @@
 
 @media only screen and (min-width: 600px) {
     .boxUserLogin {
-        margin: 30px 100px;
+        margin: 100px;
     }
     .buttonUserLogin{        
         width: 20%;

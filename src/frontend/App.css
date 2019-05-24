@@ -19,3 +19,24 @@ body {
     color: #4a4a4a;
     
   }
+
+  button{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    margin: 20px;
+    background-color: #67C21B;
+    color: white;
+    text-align: center; 
+    border-radius: 10px;   
+}
+
+input {
+    padding: 12px;
+    border: solid 2px grey;
+    border-radius: 10px;
+}
+hr {
+    margin: 0.5em;
+    border-width: 1px;
+}

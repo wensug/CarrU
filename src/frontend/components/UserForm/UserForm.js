@@ -1,111 +1,73 @@
 import React from "react";
 // import UsersData from "../../../UsersData";
 import "./UserForm.css";
-import { NavLink } from 'react-router-dom';
-
+import { NavLink } from "react-router-dom";
 
 class UserForm extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
+  }
 
-    }
+  render() {
+    return (
+      <>
+        <div className="UserForm">
+          <header className="headerUserForm">
+            <h2>New User</h2>
+            <hr />
+            <h3>Create your user profile</h3>
+          </header>
+          <form className="UserForm-form">
+            <div>
+              <label>First Name:</label>
 
+              <input className="UserForm-input" type="text" name="first name" />
 
-    render() {
-        return (
-            <div className="UserForm">
-                <header className="headerUserForm">
-                    <h1>New User</h1>
-                    <h2>Create your user profile</h2>
-                </header>
-                <form className="UserForm-form">
-                    <p>
-                        <label>
-                            First Name:
-                        </label>
-                        <br></br>   
-                        <input
-                            className="UserForm-input"
-                            type="text"
-                            name="first name"
-                        />
-                    </p>
-                    <p>
-                        <label>
-                            Surname:
-                        </label>
-                        <br></br>   
-                        <input
-                           className="UserForm-input"
-                           type="text"
-                           name="surname"
-                        />
-                    </p>
-                    <p>
-                        <label>
-                            Email:
-                        </label>
-                        <br></br>   
-                        <input
-                             className="UserForm-input"
-                             type="email"
-                             name="email"
-                        />
-                    </p>
-                    <p>
-                        <label>
-                            Address:
-                        </label>
-                        <br></br>   
-                        <input
-                            className="UserForm-input"
-                            type="text"
-                            name="telephone"
-                                />
-                    </p>
-                    <p>
-                        <label>
-                            City:
-                        </label>
-                        <br></br>   
-                        <input
-                          className="UserForm-input"
-                          type="text"
-                          name="city"
-                        />
-                    </p>
-                    <p>
-                        <label>
-                            Postcode:
-                        </label>
-                        <br></br>   
-                        <input
-                             className="UserForm-input"
-                             type="text"
-                             name="postcode"
-                        />
-                    </p>  
-                    <p>
-                        <label>
-                            Country:
-                        </label>
-                        <br></br>   
-                        <select className="UserForm-input" selected="UK">
-                                <option value="uk">UK</option>
-                                <option value="italy">Italy</option>
-                                <option value="spain">Spain</option>
-                                <option value="venezuela">Venezuela</option>
-                            </select>
-                    </p> 
-                    {/* submit button will go here */}
-                    
-                </form>
-                <button className="buttonUserLogin"><NavLink to='/user-profile'>Submit</NavLink></button>
+              <label>Last Name:</label>
+
+              <input className="UserForm-input" type="text" name="surname" />
             </div>
-        );
-    }
+
+            <div>
+              <label>Address:</label>
+
+              <input className="UserForm-input" type="text" name="telephone" />
+
+              <label>City:</label>
+
+              <input className="UserForm-input" type="text" name="city" />
+
+              <label>Postcode:</label>
+
+              <input className="UserForm-input" type="text" name="postcode" />
+            </div>
+            <div>
+              <label>Email:</label>
+
+              <input className="UserForm-input" type="email" name="email" />
+
+              <label>Country:</label>
+
+              <select className="UserForm-input" selected="UK">
+                <option value="uk">UK</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+                <option value="venezuela">Venezuela</option>
+              </select>
+            </div>
+            {/* submit button will go here */}
+          </form>
+        </div>
+        <NavLink to="/user-profile">
+          <button>Submit</button>
+        </NavLink>
+
+        <NavLink to="/">
+          <button>Cancel</button>
+        </NavLink>
+      </>
+    );
+  }
 }
 
 export default UserForm;
-
-
