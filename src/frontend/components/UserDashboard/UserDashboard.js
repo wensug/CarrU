@@ -15,39 +15,42 @@ class userDashboard extends React.Component {
                 <header className='dashboard-header'>
                     <h1>User Name LastName</h1>
                 </header>
-                <div className='groups'>
-                    <h3>My groups</h3> 
-                    {
-                    groups()
-                        .map((group)=> {
-                            return(<GroupDashboard 
-                                    name={group.name}
-                                    description={group.description}
-                                    />); 
-                            })
-                    
-                    }
-                    <button className='buttonNew'><NavLink to='/new-group-form'>New Group</NavLink></button>
-                    <button className='buttonNew'><NavLink to='/join-event'>Join an existing event</NavLink></button>
-                </div>
-                <div className='dashboard-grid'>
-                    <div className='dashboard-groups'>
-                        {
-                            events()
-                                .map((event)=>{
-                                    return (<EventDashboard
-                                        id={event.id}
-                                        name={event.name}
-                                        group={event.group}
-                                        location={event.location}
-                                        date={event.date}/>
-                            );
-                        })
-                        }
-                    </div>
-                    <button className='buttonNew'><NavLink to='/new-event-form'>New Event</NavLink></button>
-                </div>
+                <div className='dashboard-columns'>
                 
+                    <div className='groups'>
+                    <h3>My groups</h3> 
+                        {
+                        groups()
+                            .map((group)=> {
+                                return(<GroupDashboard 
+                                        name={group.name}
+                                        description={group.description}
+                                        />); 
+                                })
+                        
+                        }
+                        <NavLink to='/new-group-form'><button className='buttonNew'>New Group</button></NavLink>
+                        <NavLink to='/join-event'><button className='buttonNew'>Join an existing event</button></NavLink>
+                    </div>
+                    <div className='dashboard-grid'>
+                        <h3>Upcoming events</h3> 
+                        <div className='dashboard-groups'>
+                            {
+                                events()
+                                    .map((event)=>{
+                                        return (<EventDashboard
+                                            id={event.id}
+                                            name={event.name}
+                                            group={event.group}
+                                            location={event.location}
+                                            date={event.date}/>
+                                );
+                            })
+                            }
+                        </div>
+                        <NavLink to='/new-event-form'><button className='buttonNew'>New Event</button></NavLink>
+                    </div>
+                </div>
             </div>
         )
     }
