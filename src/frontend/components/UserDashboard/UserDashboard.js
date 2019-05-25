@@ -3,10 +3,19 @@ import { NavLink } from "react-router-dom";
 import "./userDashboard.css";
 import EventDashboard from "./EventDashboard";
 import GroupDashboard from "./GroupDashboard";
-import events from "../data/events-get.js";
 import groups from "../data/groups-get.js";
 
 class userDashboard extends React.Component {
+  constructor() {
+    super();
+    this.state = { events: []}
+  }
+  componentDidMount() {
+    fetch('/rest/events')
+    .then(response => response.json())
+    .then(events => this.setState({ events }));
+  }
+
   render() {
     return (
       <div className="dashboard">
@@ -42,17 +51,19 @@ class userDashboard extends React.Component {
           <div className="dashboard-grid">
             <h3>Upcoming events</h3>
             <div className="dashboard-groups">
-              {events().map(event => {
-                return (
-                  <EventDashboard
-                    id={event.id}
-                    name={event.name}
-                    group={event.group}
-                    location={event.location}
-                    date={event.date}
-                  />
-                );
-              })}
+              {
+                
+                
+                  this.state.events.map(event => {
+                    return (
+                      <EventDashboard
+                        id={event.id}
+                        name={event.name}
+                        group={event.group}
+                      />
+                    ); 
+                  }) 
+                }
             </div>
           </div>
         </div>
