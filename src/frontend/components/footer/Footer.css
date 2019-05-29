@@ -1,5 +1,5 @@
 footer {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     background-color: #4a4a4a;
 }
 
@@ -10,7 +10,7 @@ footer {
 }
 
 .footer-navbar li {
-    padding: 3px;
+    padding: 5px;
 }
 
 .footer-navbar a {
@@ -42,10 +42,10 @@ footer {
 
 @media (min-width: 780px) {
 
-    footer {
+    /* footer {
         height: 4rem;
-        position: fixed;
-    }
+        position: absolute;
+    } */
 
     .footer-main {
         display: flex;

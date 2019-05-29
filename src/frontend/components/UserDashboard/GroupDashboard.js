@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './userDashboard.css'
 export default function GroupDashboard(group) {
 
     return (

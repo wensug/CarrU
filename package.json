@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "mongodb": "^3.2.6",
     "nodemon": "^1.19.0",
@@ -13,7 +14,7 @@
     "react-scripts": "3.0.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production npm-run-all -s build _start-backend",
+    "start": "cross-env NODE_ENV=production npm-run-all -s build _start-backend",
     "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
     "_start-db": "mongod",
     "_start-frontend": "react-scripts start",
@@ -37,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }

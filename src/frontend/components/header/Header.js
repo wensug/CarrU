@@ -5,12 +5,12 @@ import './Header.css';
 
 export default function Header() {
     return (
-        <header>
+        <header className='page-header'>
             <ul className='header'>
                 <li><NavLink to='/'>CarrU</NavLink></li>
                 <li><NavLink to='/'>Home</NavLink></li>
                 <li><NavLink to='/user-login'>LogIn</NavLink></li>
-                <li><NavLink to='/'>Contact</NavLink></li>
+                
             </ul>
         </header>
     );

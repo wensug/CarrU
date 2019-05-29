@@ -7,7 +7,7 @@ const url = process.env.NODE_ENV === 'production' ?
    const dbName = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('?'));
 
    module.exports = { connect };
-
+console.log(url)
 function connect() {
     return new Promise((resolve, reject) => {
          MongoClient.connect(url, { useNewUrlParser: true }, function (err, client) {

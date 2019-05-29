@@ -48,11 +48,7 @@ export default class Homepage extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+                
             </div>
         );
     }

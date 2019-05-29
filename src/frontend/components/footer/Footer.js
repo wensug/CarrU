@@ -4,12 +4,11 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <footer style={{position: 'fixed'}}>
+        <footer className='page-footer'>
         <div className='footer-main'>
             <ul className='footer-navbar'>
-                <li><NavLink to='/#home'>Product</NavLink></li>
-                <li><NavLink to='/#About'>About</NavLink></li>
-                <li><NavLink to='/#Contact'>Contact</NavLink></li>
+               <li><a>about</a></li>
+                
             </ul>
             <div className='footer-media'>
                 <a><i class="fab fa-facebook"></i></a>

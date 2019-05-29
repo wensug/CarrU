@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from 'react-router-dom';
-import "./UserProfile.css";
+//import "./UserProfile.css";
 import "../UserForm/UserForm";
 
 import getUsers from  "../data/users-get";
