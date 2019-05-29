@@ -19,6 +19,7 @@
     "_start-db": "mongod",
     "_start-frontend": "react-scripts start",
     "_start-backend": "nodemon src/backend/app.js",
+    "db-prd-to-dev": "node src/backend/db/db-migrate",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

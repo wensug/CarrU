@@ -3,17 +3,35 @@ import { NavLink } from "react-router-dom";
 import "./userDashboard.css";
 import EventDashboard from "./EventDashboard";
 import GroupDashboard from "./GroupDashboard";
-import groups from "../data/groups-get.js";
+// import groups from "../data/groups-get.js";
 
 class userDashboard extends React.Component {
   constructor() {
     super();
-    this.state = { events: []}
+    this.state = { events: [], groups: [] };
   }
+  //   componentDidMount() {
+  //     fetch('/rest/events')
+  //     .then(response => response.json())
+  //     .then(events => this.setState({ events }));
+  //   }
+
+  //  componentDidMount() {
+  //     fetch('/rest/groups')
+  //     .then(response => response.json())
+  //     .then(groups => this.setState({ groups }));
+  //   }
+
   componentDidMount() {
-    fetch('/rest/events')
-    .then(response => response.json())
-    .then(events => this.setState({ events }));
+    Promise.all([this.fetch("/rest/events"), this.fetch("/rest/groups")])
+      .then(([events, groups]) => {
+        // set state in here
+        this.setState({ events, groups });
+      });
+  }
+
+  fetch(endpoint) {
+    return fetch(endpoint).then(response => response.json());
   }
 
   render() {
@@ -30,7 +48,7 @@ class userDashboard extends React.Component {
         <div className="dashboard-columns">
           <div className="groups">
             <h3>My groups</h3>
-            {groups().map(group => {
+            {this.state.groups.map(group => {
               return (
                 <GroupDashboard
                   name={group.name}
@@ -51,19 +69,15 @@ class userDashboard extends React.Component {
           <div className="dashboard-grid">
             <h3>Upcoming events</h3>
             <div className="dashboard-groups">
-              {
-                
-                
-                  this.state.events.map(event => {
-                    return (
-                      <EventDashboard
-                        id={event.id}
-                        name={event.name}
-                        group={event.group}
-                      />
-                    ); 
-                  }) 
-                }
+              {this.state.events.map(event => {
+                return (
+                  <EventDashboard
+                    id={event.id}
+                    name={event.name}
+                    group={event.group}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
