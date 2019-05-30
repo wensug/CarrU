@@ -113,9 +113,6 @@ class UserForm extends React.Component {
             {/* submit button will go here */}
           </form>
         </div>
-        <NavLink to="/user-profile">
-          <button>Submit</button>
-        </NavLink>
 
         <NavLink to="/">
           <button>Cancel</button>
