@@ -22,12 +22,12 @@ export default class NewGroupForm extends React.Component {
 
     handleSubmit(event) {
         //event.preventDefault(event);
-        const groupName = document.getElementById("group-name").value;
-        const groupDescription = document.getElementById("group-description").value;
+        const name = document.getElementById("group-name").value;
+        const description = document.getElementById("group-description").value;
         const memberList = this.state.memberList;
         const postBody = {
-            groupName,
-            groupDescription,
+            name,
+            description,
             memberList
         };
 
