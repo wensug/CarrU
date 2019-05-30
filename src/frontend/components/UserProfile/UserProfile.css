@@ -1,17 +1,19 @@
-.userProfile {
+/* .userProfile {
     display: flex;
     flex-direction: column;
     align-content: center;
-    
-}
+} */
 
-.headerUserProfile{
+/* .headerUserProfile{
     padding: 10px;
     margin: 20px auto 10px 15px;
-}
+} */
 
 .profileForm {
-    margin: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 /* .profileBox {
@@ -19,31 +21,28 @@
     flex-direction: row;       
 } */
 
-.paraInputWrap {
-    margin-right: 40px;
-}
 
-.profileForm > p {
+/* .profileForm > p {
     padding: 5px 10px 2px 2px;
     margin: 2px 20px 2px 2px;
-}
+} */
 
-.profileInput {
+/* .profileInput {
     padding: 12px;
     border: solid 2px grey;
     border-radius: 10px;
-}
+} */
 
-.profileButton {
+/* .profileButton {
     padding: 5px;
     margin: 20px auto 15px auto;
     background-color: green;
     color: white;
-}
+} */
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .profileBox {
         display: flex;
         flex-direction: row;       
     }
-  }
+  } */

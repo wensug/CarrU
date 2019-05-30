@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+
 import "./UserProfile.css";
 import "../UserForm/UserForm";
 
@@ -27,11 +28,12 @@ class UserProfile extends React.Component {
          
            return(
             <>
+
                 <div className="UserProfile">
                     <header className="headerUserProfile">
                         <h1>User Profile</h1>
                     </header>
-                    <hr></hr>
+      
                     <form className="profileForm">
                         <div className="profileBox">
                             <div className="paraInputWrap">
@@ -54,6 +56,7 @@ class UserProfile extends React.Component {
                                     }
                                 />
                             </div>
+
                         </div>
                         <div className="profileBox">
                             <div className="paraInputWrap">
@@ -145,11 +148,12 @@ class UserProfile extends React.Component {
                             </div>
                         </div>
 
-
-                    </form>
-                </div>
-                <NavLink to='/user-profile'><button>Edit Details</button></NavLink>
-                <NavLink to='/user-dashboard'><button>Dashboard</button></NavLink>
+                    </div>
+                    <NavLink to='/user-profile'><button>Edit Details</button></NavLink>
+                    <NavLink to='/user-dashboard'><button>Dashboard</button></NavLink>
+                </form>
+                
+            </div>
             
             </>
         );

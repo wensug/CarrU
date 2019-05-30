@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className='page-footer'>
         <div className='footer-main'>
             <ul className='footer-navbar'>
-               <li><a>about</a></li>
+               <li><a>About us</a></li>
                 
             </ul>
             <div className='footer-media'>

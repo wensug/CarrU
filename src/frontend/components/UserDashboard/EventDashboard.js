@@ -7,16 +7,14 @@ export default function EventDashboard(event) {
     
     return (
         <>
-            <a className='event'> <NavLink to= '/new-event-form' href='#'>
+            <a className='event'>
+                 <NavLink to= '/new-event-form' href='#'>
                 <div className='event-title'>
                     <h3>{event.name}</h3>
                     <h5>{groups().find((group)=>(group.id === event.group)).name}</h5>
+                    <p>Info</p>
                 </div>
-                <ul>
-                    {/* <li>{event.date}</li>
-                    <li>{event.location}</li> */}
-                    <li>Info</li>
-                </ul>
+              
                 </NavLink>
             </a>
         </>
