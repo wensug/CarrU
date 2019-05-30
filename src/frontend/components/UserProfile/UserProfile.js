@@ -148,7 +148,6 @@ class UserProfile extends React.Component {
                             </div>
                         </div>
 
-                    </div>
                     <NavLink to='/user-profile'><button>Edit Details</button></NavLink>
                     <NavLink to='/user-dashboard'><button>Dashboard</button></NavLink>
                 </form>
