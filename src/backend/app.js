@@ -13,7 +13,7 @@ db.connect().then(dbo => {
             if(err) throw err;
             res.send(results);
         });
-    });
+    });  
 
     app.get('/rest/groups', (req, res) => {
         dbo.collection('groups').find({}).toArray((err, results) => {

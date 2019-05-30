@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 require('dotenv').config();
-const url = process.env.NODE_ENV === 'production' ?
+const url = process.env.NODE_ENV === process.env.PRODUCTION ?
     process.env.DB_URL_PRD :
     process.env.DB_URL_DEV;
    const dbName = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('?'));
