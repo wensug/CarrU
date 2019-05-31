@@ -8,10 +8,10 @@ export default function GroupDashboard(group) {
             <a href='#/new-group-form'>
                 <div className='groups-table'>
                     <ul className='group-name'>
-                        <li>{group.name}</li>
+                        <li>{group.groupName }</li>
                     </ul> -
                     <ul className='group-description'>
-                        <li>{group.description}</li>
+                        <li>{group.groupDescription}</li>
                     </ul>
                 </div>
             </a>

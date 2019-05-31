@@ -51,8 +51,8 @@ class userDashboard extends React.Component {
             {this.state.groups.map(group => {
               return (
                 <GroupDashboard
-                  name={group.name}
-                  description={group.description}
+                groupName={group.groupName}
+                groupDescription={group.groupDescription}
                 />
               );
             })}
