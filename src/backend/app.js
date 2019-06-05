@@ -22,6 +22,15 @@ db.connect().then(dbo => {
         });
     });
 
+    app.get('/rest/groups/id', (req, res) => {
+        dbo.collection('groups').findOne({ _id: req.params.id }), ((err, results) => {
+            if(err) throw err;
+            res.send(results);
+        });
+    });
+
+    
+
     app.get('/rest/users', (req, res) => {
         dbo.collection('users').find({}).toArray((err, results) => {
             if(err) throw err;
