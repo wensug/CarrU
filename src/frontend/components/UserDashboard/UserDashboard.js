@@ -10,17 +10,7 @@ class userDashboard extends React.Component {
     super();
     this.state = { events: [], groups: [] };
   }
-  //   componentDidMount() {
-  //     fetch('/rest/events')
-  //     .then(response => response.json())
-  //     .then(events => this.setState({ events }));
-  //   }
 
-  //  componentDidMount() {
-  //     fetch('/rest/groups')
-  //     .then(response => response.json())
-  //     .then(groups => this.setState({ groups }));
-  //   }
 
   componentDidMount() {
     Promise.all([this.fetch("/rest/events"), this.fetch("/rest/groups")])
@@ -72,9 +62,9 @@ class userDashboard extends React.Component {
               {this.state.events.map(event => {
                 return (
                   <EventDashboard
-                    id={event.id}
-                    name={event.name}
-                    group={event.group}
+                    id={event._id}
+                    eventName={event.eventName}
+                    groupId={event.groupId}
                   />
                 );
               })}
