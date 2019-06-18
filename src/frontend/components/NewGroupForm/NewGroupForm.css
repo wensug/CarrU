@@ -1,0 +1,84 @@
+.new-group {
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
+}
+
+.newGroup-title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(121, 118, 118);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-newGroup label {
+    display: none;
+}
+
+.add-member {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-newGroup input {
+    width: 250px;
+    padding: 0.4rem 0.2rem;
+    margin: 0.5rem;
+}
+
+/* .group-name, 
+.group-description, 
+.new-member {
+    
+} */
+
+
+@media (min-width: 780px) {
+    .form-newGroup label {
+        display: block;
+    }
+
+    .new-group {
+        width: 700px;
+        margin: 2rem auto;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-box {
+        flex-direction: row;
+        margin: 10px 99px;
+        justify-content: flex-start;
+        padding: 15px
+    }
+
+    .form-box label {
+        display: block;
+        flex-basis: 6rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+
+    .form-box.add-member {
+        justify-content: center;
+    }
+
+
+    .form-box:nth-child(4) input{
+        padding-right: 80px;
+
+    }
+
+}

@@ -23,10 +23,12 @@
 
   .header li a {
       color: #fff;
+      padding: 
   }
 
   .header a:hover {
       color: rgb(255, 247, 35);
+      padding: 0.5rem;
   }
 
 

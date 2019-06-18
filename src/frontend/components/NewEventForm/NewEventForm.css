@@ -1,55 +1,94 @@
-/* 
-.NewEventForm {
+.headerNewEventForm {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
 }
 
-.headerNewEventForm {
+form.NewEventForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.NewEventBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.NewEventBox label {
+    display: none;
+}
+
+.NewEventBox input {
+    padding: 0.3rem;
+    margin: 10px;
+}
+
+.NewEventForm h2 {
+    margin: 1rem 0;
+}
+
+.sub-btn {
     padding: 10px;
-    margin: 20px auto 10px 15px;
-    font-size: 25px;
-   
+    width: 150px;
+    margin: 1rem 0;
+    background-color: #67C21B;
+    color: white;
+    border-radius: 5px;
 }
 
-.NewEventForm {
-    margin: 20px;
-}
-h2 {
-    text-align: left;
-}
-.paraInputWrap {
-    margin-right: 40px;
-    margin-top: 10px;    
-}
 
-.NewEventForm > h3 {
-    padding: 5px 10px 2px 2px;
-    margin: 2px 20px 2px 2px;
-}
+@media (min-width: 780px) {
+    .headerNewEventForm {
+        width: 800px;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
 
-.NewEventInput, .membersBox {
-    padding: 12px;
-    border: solid 2px grey;
-    border-radius: 10px;
-}
-
-.NewEventMessage {
-    
-        padding: 5px 10px 2px 2px;
-        margin: 2px 20px 2px 2px;
-    
-}
-
-.NewEventButton {
-    padding: 5px;
-    margin: 20px auto 15px auto;
-}
-
-@media only screen and (min-width: 600px) {
     .NewEventBox {
         display: flex;
-        flex-direction: row;  
-        flex-wrap: wrap;     
+        flex-direction: row;
     }
-  } */
+
+    .NewEventBox label {
+        display: block;
+        flex-basis: 6rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .NewEventBox .event-box {
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+
+    input#new-event-date {
+        width: 250px;
+        
+    }
+
+    .event-box.list {
+        font-size: 13px;
+    }
+
+    select#new-event-group-name {
+        padding: 5px;
+    }
+
+    
+
+   
+}
