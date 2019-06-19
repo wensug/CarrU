@@ -9,8 +9,8 @@ class NewEventForm extends React.Component {
     this.state = {
       groups: [],
       redirect: false,
-      groupName: "",      
-      invitedMembers: [],      
+      groupName: "",
+      invitedMembers: [],
     };
   }
 
@@ -30,7 +30,7 @@ class NewEventForm extends React.Component {
       meetingPoint,
       // groupName,
       groupId,
-    };    
+    };
 
     console.log(postBody);
     fetch("/rest/storeEvents", {
@@ -43,15 +43,17 @@ class NewEventForm extends React.Component {
   }
 
   makeSelection(e) {
-    this.setState({ groupName: e.target.value,
-    groupId: e.target.value.groupId });
+    this.setState({
+      groupName: e.target.value,
+      groupId: e.target.value.groupId
+    });
   }
 
-     componentDidMount() {
-      fetch('/rest/groups')
+  componentDidMount() {
+    fetch('/rest/groups')
       .then(response => response.json())
       .then(groups => this.setState({ groups }));
-    }
+  }
 
   getGroup() {
     return this.state.groups.map(group => {
@@ -69,7 +71,7 @@ class NewEventForm extends React.Component {
       console.log(group._id);
       return group.groupName === document.getElementById("new-event-group-name").value;
     })._id;
-    
+
   }
 
 
@@ -115,56 +117,73 @@ class NewEventForm extends React.Component {
     } else {
       return (
         <div className="NewEventForm">
-          <header className="headerNewEventForm">Create a new event</header>
-          <hr />
+          <div className="headerNewEventForm">
+            <h2>Create a new event</h2>
+
           <form className="NewEventForm" onSubmit={(e) => this.handleSubmit(e)}>
-            <div className="NewEventBox">
-              <label>Event Name</label>
-              <input
-                type="text"
-                className="NewEventName NewEventInput"
-                id="new-event-name"
-                required
-              />
-              <label>Date</label>
-              <input
-                type="date"
-                placeholder="dd-mm-yyyy"
-                className="NewEventDate NewEventInput"
-                id="new-event-date"
-                required
-              />
-            </div>
-            <h2> Destination</h2>
-            <div className="NewEventBox">
-              <label>Event Location</label>
-              <input
-                type="text"
-                className="NewEventAddress NewEventInput"
-                id="new-event-location"
-                required
-              />
-              <label>Meeting Point</label>
-              <input
-                type="text"
-                className="NewEventCity NewEventInput"
-                id="new-event-meeting-point"
-                required
-              />              
-            </div>
-            <div className="NewEventBox">
-              <label>Choose a group</label>
-              <select
-                onChange={e => this.makeSelection(e)}
-                value={this.state.groupName}
-                id="new-event-group-name"
-                className="NewEventPassengers NewEventInput"
-              // value={document.getElementById("groupSelected").value}
-              >
-                <option />
-                {this.getGroup()}
-              </select>
-              {/* <label>Choose members to invite</label>
+              <div className="NewEventBox">
+                <div className='event-box'>
+                  <label>Event Name</label>
+                  <input
+                    type="text"
+                    className="NewEventName NewEventInput"
+                    id="new-event-name"
+                    placeholder='event name'
+                    required
+                  />
+                </div>
+                <div className='event-box'>
+                  <label>Date</label>
+                  <input
+                    type="date"
+                    placeholder="dd-mm-yyyy"
+                    className="NewEventDate NewEventInput"
+                    id="new-event-date"
+                    required
+                  />
+                </div>
+
+              </div>
+              <h2> Destination</h2>
+              <div className="NewEventBox">
+                <div className='event-box'>
+                  <label>Event Location</label>
+                  <input
+                    type="text"
+                    className="NewEventAddress NewEventInput"
+                    id="new-event-location"
+                    placeholder='Event Location'
+                    required
+                  />
+                </div>
+                <div className='event-box'>
+                  <label>Meeting Point</label>
+                  <input
+                    type="text"
+                    className="NewEventCity NewEventInput"
+                    id="new-event-meeting-point"
+                    placeholder='Meeting Point'
+                    required
+                  />
+                </div>
+
+              </div>
+              <div className="NewEventBox">
+                <div className='event-box list'>
+                  <label>Choose a group</label>
+                  <select
+                    onChange={e => this.makeSelection(e)}
+                    value={this.state.groupName}
+                    id="new-event-group-name"
+                    className="NewEventPassengers NewEventInput"
+                  // value={document.getElementById("groupSelected").value}
+                  >
+                    <option />
+                    {this.getGroup()}
+                  </select>
+                </div>
+
+                {/* <label>Choose members to invite</label>
               <div className="membersBox">
                
                 {this.getMembers()}
@@ -176,14 +195,16 @@ class NewEventForm extends React.Component {
                   return <p className="invited" key={invited}>{invited}</p>;
                 })}
               </div> */}
-            </div>
+              </div>
 
 
-            <input
-              type="submit"
-              value="Create"
-            />
-          </form>       
+              <input
+                type='submit'
+                value='Create'
+                className='sub-btn'
+              />
+            </form>
+          </div>
         </div>
       );
     }

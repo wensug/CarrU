@@ -42,52 +42,57 @@ export default class JoinEvent extends React.Component {
     render() {
         //conditional rendering
         return (
-            <div>
-                <h3>You are invited to a NewEventName<br /><br /></h3>
-                <hr></hr>
-                <p>NewEventName(var) is at Location<br /><br /></p>
-                <p>Are you a passenger or are you driving a car to the event?
-                    <br /><br />Please select: 
-                </p>
+            <div className='invitation'>
+                <h3>You are invited to a NewEventName</h3>
+                
+                <p>NewEventName(var) is at Location</p>
+                <p>Are you a passenger or are you driving a car to the event?</p>
+                <p>Please select:</p>
                 <form>
+                    <div className='input-field'>
                     <input type="checkbox"
                         checked={this.state.isPassenger}
                         value="passenger"
                         // defaultChecked
                         onChange={() => this.hideDriverBlock()}
                     />
-                        &nbsp;I am a passenger
-                    <br />
+                        <p>I am a passenger</p>
+                    </div>
+                    
+                    <div className='input-field'>
                     <input type="checkbox"
                         checked={this.state.isDriver}
                         value="driver" 
                         // defaultChecked={this.state.chkbox}
                         onChange={() => this.showDriverBlock()}
                     />
-                        &nbsp;I will drive a car to the event
-                    <br />
+                        I will drive a car to the event
+                
+                    
+                    </div>
+                    <div className='input-field'>
                     {
                         this.state.driverBlockVisible &&
 
-                        <div>
+                        <div className='passengers-option'>
                             <input type="text"
                                 name="user"
                                 value={this.state.seats}
                                 onChange={(e) => this.changeSeats(e)}
                             />
-                            &nbsp;Total number of seats in car (including driver)
-                            <br />
+                            Total number of seats in car (including driver)
+                            
                             <input type="text"
                                 name="user"
                                 value={this.state.additional}
                                 onChange={(e) => this.changeAdditional(e)}
                             />
-                            &nbsp;Additional seats required by driver
-                            <br />
+                            Additional seats required by driver
+                            
                         </div>
                     }
-
-                    <br />
+                    </div>
+                    
                     <button>Reset</button>
                     <NavLink to='/user-dashboard'><button>Submit</button></NavLink>
                     <NavLink to='/user-dashboard'><button>Cancel</button></NavLink>

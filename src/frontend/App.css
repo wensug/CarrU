@@ -2,6 +2,8 @@
 @import url('./components/homepage/Homepage.css');
 @import url('./components/footer/Footer.css');
 @import url('./components/UserDashboard/userDashboard.css');
+@import url('./components/NewGroupForm/NewGroupForm.css');
+@import url('./components/JoinEvent/JointEvent.css');
 
 
 * {
@@ -48,6 +50,7 @@ button {
     margin: 5px;
     background-color: #67C21B;
     color: white;
+    border-radius: 5px;
 }
 
 
